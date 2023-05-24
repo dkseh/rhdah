@@ -31,6 +31,7 @@ static void * map_data[100];
 char name[10];
 char student_id[9];
 int try, ball, strike;
+char buf[20];
 
 int passwd[4];
 int userans[4];
@@ -176,10 +177,10 @@ void enter_ans(int * ans) {
 		    }
 		}
 	}
-}
+
 
 int decimal_check(int * ans) { //0~9까지 입력했는지 체크
-    if((ans[0]) > 9 || (ans[1]) > 9 || (ans[2]) > 9 || (ans[3]) > 9) {return 1;}
+    if((ans[0] > 9) || (ans[1] > 9) || (ans[2] > 9) || (ans[3] > 9)) {return 1;}
     else {return 0;}
 }
 int repeat_check(int * ans) { //중복 숫자 입력 체크
